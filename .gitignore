@@ -1,39 +1,42 @@
+# Gradle
 .gradle
 build/
+!gradle/wrapper/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+!gradle/wrapper/gradle-wrapper.properties
 
-### IntelliJ IDEA ###
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
-*.iws
-*.iml
-*.ipr
+
+# Output directories
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+# Class and compiled files
 *.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# VM crash logs
 hs_err_pid*
 
-.idea
-*.iml
-target
-out
+# Maven/other build tools
+target/
+
+# Logs
 *.log
 
-### Mac OS ###
+# macOS system files
 .DS_Store
